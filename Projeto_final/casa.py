@@ -1,4 +1,13 @@
- print("1 - escovar os dentes")
+
+
+class Casa:
+  def __init__(self):
+    self.__comida = 5
+ 
+ 
+
+
+'''print("1 - escovar os dentes")
         print("2 - Fazer café da manhã")
         print("3 - Pedir café da manhã")
         print("4 - Tomar café da manhã")
@@ -34,5 +43,5 @@
       
       
     
-      
+      '''
    
