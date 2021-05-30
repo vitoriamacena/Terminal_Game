@@ -10,10 +10,10 @@ if(__name__ == "__main__"):
     relogio = Relogio()
     personagem = Personagem()
     casa = Casa()
-    print(f'Vamos começar seu dia! Agora são exatamente {relogio} e o despertador vai tocar às 7:00 horas.')
+    print(f'Vamos começar seu dia! São exatamente {relogio} e o despertador vai tocar às 7:00 horas.')
     sleep(3)    
     relogio.avancaTempo(1)
-    print('São 7:00 horas, hora de acordar!')
+    print('7:00 horas, hora de acordar!')
     sleep(2)
     while personagem.acordar == False:
         for i in range(0,2):
@@ -35,16 +35,16 @@ if(__name__ == "__main__"):
             print(f'{relogio} horas, hora de acordar!')
         else:
             continue
-    atrasado = 'Você não esta atrado ainda!'
+    atrasado = 'Você ainda não está atrado!'
     if relogio.horas == 6 and relogio.minutos > 20:
-        atrasado = 'Você esta atrado!!!'
+        atrasado = 'Você está atrado!'
     print(f'Você acordou às {relogio} horas, {atrasado} ')
-    print(f'{personagem}, você precisa tomar banho')
+    print(f'{personagem}, Você precisa tomar banho.')
     while True:
         op = int(input('1-> Tomar banho \n'
-                       '2-> Ver as notícias no celular \n'
+                       '2-> Ver as noticias no celular \n'
                        '3-> Ver mensagens do WhatsApp\n'
-                       'Escolha:'))
+                       'Escolha :'))
         if op == 1 :
             relogio.avancaTempo(20)
             if relogio.horas == 6 and relogio.minutos >= 30:
@@ -60,9 +60,16 @@ if(__name__ == "__main__"):
         elif op == 3:
             relogio.avancaTempo(10)
             if relogio.horas == 6 and relogio.minutos == 30:
-                print('cuidado para não perder o ônibus das 07 horas!')
+                print('Cuidado para não perder o ônibus das 07 horas!')
             print('Você ainda precisa tomar banho!')
             print(f'{relogio} horas')            
         else:
             continue
     
+            
+            
+
+        
+    
+
+

@@ -1,6 +1,9 @@
 class Curso:
     def __init__(self):
-        self.__avaliacao = 1
+        pass
+
+    def tirar_duv(self):
+        return '' #não me lembro o que deveria acontecer aqui, quando ele tira a dúvida
 
     def sair_curso(self):
-        return ''
+        return '' #e se ele sair do curso, qual a consequência?

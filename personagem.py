@@ -30,9 +30,8 @@ class Personagem():
     
     def acordar2(self):
         self.__acordar = True
+
     
-    def jogar(self):
-        self.jogar = True
      
      
     @property   
