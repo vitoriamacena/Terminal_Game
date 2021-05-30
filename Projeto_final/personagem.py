@@ -21,12 +21,18 @@ class Personagem():
     @property
     def acordar(self):
         return self.__acordar
+    
+    
         
     def tomar_banho(self):
         self.__sujo = False
-    
+  
+        
     def comer(self):
         self.__fome = False
+        
+    def fome(self):
+        self.__fome = True
     
     def acordar2(self):
         self.__acordar = True
@@ -42,5 +48,8 @@ class Personagem():
         
     
         
-    
-    
+    def gasto(self, valor):
+        self.__dinheiro = self.__dinheiro - valor
+        return self.__dinheiro
+
+        
