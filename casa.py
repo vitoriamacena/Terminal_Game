@@ -9,7 +9,7 @@ class Casa:
     self.jogar = 10 #minutos
     
   def tarefa(self):
-        self.__tarefa = 30 #minutos
+        self.tarefa = 30 #minutos
 
 
 
