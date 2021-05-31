@@ -46,36 +46,36 @@ if(__name__ == "__main__"):
                        '3-> Ver o mensagens do WhatsApp\n'
                        'Escolha :'))
         if op == 1 :
-            personagem.tomar_banho()
+            personagem.tomar_banho()#chama a função tomar banho que deixa o sujo como False
             relogio.avancaTempo(20)#relogio avança 20 munutos 
-            if relogio.horas == 7 and relogio.minutos >= 30:
+            if relogio.horas == 7 and relogio.minutos >= 30:#condicional que verefica se já é 07:30 ou mais para avisar sobre a hora do ônibus
                 print('cuidado para não perder o ônibus das 08 horas !!!')
-            print(f'{relogio} horas')
+            print(f'{relogio} horas')#imprime a hora 
             break        
         elif op == 2:
             relogio.avancaTempo(5)#relogio oavança 5 minutos 
-            if relogio.horas == 7 and relogio.minutos == 30:
+            if relogio.horas == 7 and relogio.minutos == 30:#condicional que verefica se já é 07:30 ou mais para avisar sobre a hora do ônibus
                 print('cuidado para não perder o ônibus das 08 horas !!!')
             print('Você ainda precisa tomar banho !!!')
             print(f'{relogio} horas')            
         elif op == 3:
             relogio.avancaTempo(10)#relogio avança 10 minutos 
-            if relogio.horas == 7 and relogio.minutos >= 30:
+            if relogio.horas == 7 and relogio.minutos >= 30:#condicional que verefica se já é 07:30 ou mais para avisar sobre a hora do ônibus
                 print('cuidado para não perder o ônibus das 08 horas !!!')
             print('Você ainda precisa tomar banho !!!')
             print(f'{relogio} horas')            
         else:
            print('Escolha invalida !!!')
     print(personagem)   
-    while True:
+    while True:#laço de repetição para dar a escolha entre opções obrigando a escolher uma das duas
         op = int(input('1-> Tomar café\n'
                        '2-> Ir rabalhar sem tomar café\n '
                        'Escolha :')) 
         if op == 1:
-            valor = False
-            personagem.comer()
+            valor = False#valor recebe o valor logico False
+            personagem.comer()#chama o métedo comer da classe personagem
             print('Você tomou café da manhã agora precisa ir trabalhar!!!')
-            relogio.avancaTempo(10)
+            relogio.avancaTempo(10)#chama o método avancatempo da classe relogio e avança 10 minutos 
             break
         elif op == 2:
             print('Você não tomou café da manhã mesmo assim precisa ir trabalhar !!! ')
@@ -84,8 +84,8 @@ if(__name__ == "__main__"):
             print('Escolha invalida !!!')
               
       
-    if relogio.horas == 7 and relogio.minutos > 47:
-        relogio.avancaTempo(15)
+    if relogio.horas == 7 and relogio.minutos > 47:#condicional que verefica se a hora é maior que 07:47 que se for não da mais tempo de ir ao ponto pegar o ônibus
+        relogio.avancaTempo(15)#chama o metodo da classe relogio e avança 15 minutos no tempo
         print('Você leva 13 minutos para ir até o ponto para pegar o ônibus que sai as 08:00 horas ')
         print('Você acabou perdendo o ônibus para ir trabalhar !!! parabéns kkkk')
         while True:
@@ -95,9 +95,9 @@ if(__name__ == "__main__"):
                        'Escolha :'))
             if op == 1:
                 valor = 80
-                minutos = 60 - relogio.minutos
-                personagem.gasto(valor)
-                relogio.avancaTempo(20 + minutos)
+                minutos = 60 - relogio.minutos #calcula quantos minutos faltavam pra dar 8 horas quando voce sai de casa
+                personagem.gasto(valor) #chama o método gasto para descontar o valor em conta o valor do uber
+                relogio.avancaTempo(20 + minutos) #chama o metodo da classe relógio e passa como parametro o tempo que leva ara chegar no trabalho e soma com os minutos  
                 print('Você chegou no horario ainda.... ufa!!!')
                 break
             elif op == 2:
@@ -108,8 +108,8 @@ if(__name__ == "__main__"):
                 print('Você chegou no horario ainda.... ufa!!!')
                 break
             elif op == 3:
-                relogio.avancaTempo(120)                
-                print('Você não chegou no horario e vai perder o valor das horas de atraso e o sabados e domingos do mês R$250,00 Reais !!!!')
+                #relogio.avancaTempo(120)                
+                print('Você não chegou no horario e vai perder o valor das horas de atraso e o sabados e domingos do mês R$250,00 Reais, que vai ser decontado no próximo pagamento!!')
                 break
             else:
                  print('Opção invlaida !!!')  
@@ -124,7 +124,7 @@ if(__name__ == "__main__"):
         print(personagem) 
     
     print(f'Chegou no trabalho as {relogio} horas, e começou suas atividades !!')
-    horas = 240 - relogio.minutos 
+    horas = 240 - relogio.minutos #calcula quantos minutos vc chegou atrasdo ou adiantado para que a hora do almoço seja ao meio dia 
     relogio.avancaTempo(horas)
     sleep(4)
     personagem.fome()
