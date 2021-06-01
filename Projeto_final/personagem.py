@@ -26,7 +26,7 @@ class Personagem():
         
     def tomar_banho(self):
         self.__sujo = False
-  
+    
         
     def comer(self):
         self.__fome = False
