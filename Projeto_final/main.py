@@ -142,9 +142,7 @@ if(__name__ == "__main__"):
     relogio.avancaTempo(horas)
     print('Realizando suas atividades do trabalho !!\n')
     for i in tqdm(range(10)):
-        sleep(1)
-        for i in tqdm(range(10)):
-            sleep(1)
+        sleep(1)        
     print()
     sleep(5)
     os.system("cls")
