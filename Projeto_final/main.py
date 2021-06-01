@@ -239,7 +239,7 @@ if(__name__ == "__main__"):
             while True:
                 op = int(input('1-> Comprar um Mclanche feliz R$19,90 com refri gratis\n'
                                '2-> Comprar um Mega Stacker 4.0 no burger king por R$ 24,50 com refri gratis\n'
-                               '3-> Comprar um Pasteu da tenda do tio por 5 mangos (mais é um big pasteu)\n'
+                               '3-> Comprar um Pastel da tenda do tio por 5 mangos (mais é um big pastel)\n'
                                'Escolha:'))
                 if op == 1:
                     relogio.avancaTempo(70)
