@@ -70,9 +70,9 @@ if(__name__ == "__main__"):
             print('Você ainda precisa tomar banho !!!')
             print(f'{relogio} horas')            
         else:
-           print('Escolha invalida !!!')
-    print(personagem)  
+           print('Escolha invalida !!!')      
     os.system("cls") 
+    print(personagem)
     while True:#laço de repetição para dar a escolha entre opções obrigando a escolher uma das duas
         op = int(input('1-> Tomar café\n'
                        '2-> Ir rabalhar sem tomar café\n '
