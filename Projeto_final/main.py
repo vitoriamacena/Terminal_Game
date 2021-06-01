@@ -20,8 +20,8 @@ if(__name__ == "__main__"):
     sleep(2)#espera 2 segundos para começar a dispertar 
     #faz um loop para simular um dispertador com o modo soneca
     while personagem.acordar == False:
-        #for i in range(0,2):#for para executar o som duas vezes
-        #    playsound('Projeto_final/alarme.mp3')#executa o som de dispertador 
+        for i in range(0,2):#for para executar o som duas vezes
+           playsound('Projeto_final/alarme.mp3')#executa o som de dispertador 
         op = int(input('1-> Parar dispertador\n'#da a opção de escolha entre para e modo soneca 
                        '2-> Modo soneca\n'
                        'Escolha:'))                    
