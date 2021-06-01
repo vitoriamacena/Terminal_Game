@@ -98,8 +98,7 @@ if(__name__ == "__main__"):
         relogio.avancaTempo(15)#chama o metodo da classe relogio e avança 15 minutos no tempo
         print('\nVocê leva 13 minutos para ir até o ponto para pegar o ônibus que sai as 08:00 horas\n ')
         sleep(2)
-        print('Você acabou perdendo o ônibus para ir trabalhar !!! parabéns kkkk')
-        os.system("cls")
+        print('Você acabou perdendo o ônibus para ir trabalhar !!! parabéns kkkk\n')        
         while True:
             op = int(input('1-> Chamar um uber  R$80,00\n'
                        '2-> Chamar um Taxi R$150,00   \n'
